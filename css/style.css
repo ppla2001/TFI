@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    background-color: linear-gradient(to bottom,#00BCFF,#007AFF);
 }
 
 nav{
@@ -9,7 +10,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: 'Oswald', sans-serif;
-    background: rgba(128, 128, 128, 0.425);
+    background: #1e2747;
     min-height: 75px;    
 }
 
