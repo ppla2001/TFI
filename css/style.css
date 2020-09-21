@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #000000;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     font-family: 'Oswald', sans-serif;
-    background: #4658c9;
+    background-image: linear-gradient(to top, #000000 0%, #414141 74%); ;
     min-height: 100px;    
     margin-top: 10px;
 }
@@ -23,7 +27,6 @@ nav{
 
 .nav-links{
     display: flex;
-    word-spacing: 10px;
     justify-content: space-around;
     width: 40%;
 }
@@ -41,11 +44,23 @@ nav{
     margin-left: 16px;
 }
 
+
+
 .separacion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 20px;
+    
 }
 
 .separacion img {
     width: 100%;
+}
+
+#seccion{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
 }
