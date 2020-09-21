@@ -2,16 +2,16 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: linear-gradient(to bottom,#00BCFF,#007AFF);
 }
 
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     font-family: 'Oswald', sans-serif;
-    background: #1e2747;
-    min-height: 75px;    
+    background: #4658c9;
+    min-height: 100px;    
+    margin-top: 10px;
 }
 
 .logo {
@@ -41,23 +41,11 @@ nav{
     margin-left: 16px;
 }
 
-.carousel{
+.separacion {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.carousel-peliculas {
-    /* Dejo el border por ahora para ver mas o menos el tamaño despues se puede borrar */
-    border: black 1px solid;
-}
-
-.carousel-series {
-    /* Dejo el border por ahora para ver mas o menos el tamaño despues se puede borrar */
-    border: 1px black solid;
-}
-
-.carousel-generos {
-    /* Dejo el border por ahora para ver mas o menos el tamaño despues se puede borrar */
-    border: 1px black solid;
+.separacion img {
+    width: 100%;
 }
