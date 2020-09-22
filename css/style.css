@@ -13,7 +13,7 @@ nav{
     justify-content: space-around;
     align-items: baseline;
     font-family: 'Oswald', sans-serif;
-    background-image: linear-gradient(to top, #000000 0%, #414141 74%); ;
+    background-image: linear-gradient(to top, #000000 0%, #483D8B 74%); ;
     min-height: 100px;    
     margin-top: 10px;
 }
@@ -23,6 +23,9 @@ nav{
     text-transform: uppercase;
     font-size: 25px; 
     font-weight: bold;
+    color: white;
+    -webkit-text-fill-color: #483D8B;
+    -webkit-text-stroke: 0.3px white;
 }
 
 .nav-links{
@@ -33,7 +36,7 @@ nav{
 
 .nav-links a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -43,8 +46,6 @@ nav{
     margin-bottom: 8px;
     margin-left: 16px;
 }
-
-
 
 .separacion {
     display: grid;
@@ -62,5 +63,10 @@ nav{
 #seccion{
     display: grid;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 10px 10px 5px #483D8B;
+    font-size: 35px;
 }
