@@ -28,3 +28,58 @@
     text-shadow: 10px 10px 5px #483D8B;
     font-size: 35px;
 }
+
+/* lo del carousel es todo esto */
+
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic {
+    position: relative;
+    width: 90vw;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .pic > a {
+    position: absolute;
+    top: 0;
+   
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  a:nth-child(2) {
+    animation-delay: 2s;
+  }
+  a:nth-child(3) {
+    animation-delay: 4s;
+  }
+  a:nth-child(4) {
+    animation-delay: 6s;
+  }
+  a:nth-child(5) {
+    animation-delay: 8s;
+  }
