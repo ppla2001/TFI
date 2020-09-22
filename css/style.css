@@ -11,7 +11,7 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     font-family: 'Oswald', sans-serif;
     background-image: linear-gradient(to top, #000000 0%, #483D8B 74%); ;
     min-height: 100px;    
@@ -47,26 +47,3 @@ nav{
     margin-left: 16px;
 }
 
-.separacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    gap: 10px;
-    margin: 20px;
-    
-}
-
-.separacion img {
-    width: 100%;
-}
-
-#seccion{
-    display: grid;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 10px 10px 5px #483D8B;
-    font-size: 35px;
-}
