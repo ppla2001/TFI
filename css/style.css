@@ -48,4 +48,15 @@ nav{
 }
 
 
-  
+.footer {
+    list-style: none;
+    color: white;
+    display: grid;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #000000 0%, #483D8B 74%); 
+    font-family: 'Oswald', sans-serif;
+}
+
+#nombres{
+    padding: 10px;
+}
