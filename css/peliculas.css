@@ -1,3 +1,31 @@
-.titulo {
+.pelicula-resumenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pelicula-img button{
+    background-color: rgb(38, 40, 77);
     color: white;
+    width: 250px;
+    height: 50px;
+    margin: 10%;
+    /* border: 2px solid white; */
+}
+
+.info-pelicula{
+    width: 35%;
+    color: white;
+    align-items: baseline;
+}
+
+.trailer{
+    padding-left: 70px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
