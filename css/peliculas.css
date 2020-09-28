@@ -17,6 +17,7 @@
     width: 35%;
     color: white;
     align-items: baseline;
+
 }
 
 .trailer{
@@ -28,4 +29,16 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+#actores{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#resumen{
+    margin: 15px;
 }
