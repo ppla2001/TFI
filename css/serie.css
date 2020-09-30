@@ -1,10 +1,10 @@
-.pelicula-resumenes{
+.serie-resumenes{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.pelicula-img button{
+.serie-img button{
     background-color: rgb(38, 40, 77);
     color: white;
     width: 250px;
@@ -13,7 +13,7 @@
     /* border: 2px solid white; */
 }
 
-.info-pelicula{
+.info-serie{
     width: 35%;
     color: white;
     align-items: baseline;
@@ -45,4 +45,5 @@ footer{
 
 #resumen{
     margin: 15px;
+    margin-bottom: 50px;
 }
