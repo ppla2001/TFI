@@ -1,20 +1,24 @@
 .pelicula-resumenes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
 .peli-div-grande{
-    display: grid;
-    grid-template-columns: 35% 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    width: 65%;
 }
 
 .pelicula-img{
-    width: 400px;
+    margin-left: 30px;
 }
 
 .pelicula-img img{
-    margin-left: 20px;
-    margin-top: 20px;
+    border-radius: 10px ;
 }
 
 .pelicula-img button{
@@ -23,21 +27,27 @@
     width: 250px;
     height: 50px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
+    border-radius: 10px;
     /* border: 2px solid white; */
 }
 
 .info-pelicula{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 70%;
-    color: white;
-    align-items: center;
-
+    width: 50%;
+    margin-left: 30px;
 }
 
-.trailer{
-    padding-left: 70px;
+#titulo{
+    margin-bottom: 20px;
+}
+
+#resumen{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+iframe{
+    margin-top: 70px;
 }
 
 footer{
@@ -47,27 +57,11 @@ footer{
     width: 100%;
 }
 
-#titulo{
-    margin: 15px;
-}
 
-#actores{
-    display: grid;
-    grid-template-rows: auto;
-    gap: 8px;
-    margin-top: 20px;
-    margin-left: 15px;
-}
 
-#resumen{
-    margin: 15px;
-    width: 100%;
-}
 
-iframe{
-    margin: 100px;
 
-}
+
 
 @media only screen and (max-width:420px){
     *{
@@ -75,12 +69,12 @@ iframe{
   
     }
 
-    nav{
+     nav{ 
         display: flex;
         flex-direction: column;
         width: 100%;
         margin: 0%;
-        /* position: fixed; */
+        
       }
     
       .logo a{
@@ -105,31 +99,41 @@ iframe{
       }
 
       .pelicula-resumenes{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          margin-top: 20px;
+          flex-direction: column;
       }
 
       .peli-div-grande{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding-right: 10px;
       }
 
       .pelicula-img img{
-          height: 180px;
-          width: 120px;
+          height: 300px;
+          width: 240px;
       }
 
       .pelicula-img button{
-          width: 130px;
-          font-size: 11px;
-      }
+        width: 130px;
+        font-size: 11px;
+    }
 
-      #titulo{
-          font-size: 20px;
-          width: 100px;
-      }
+    .info-pelicula{
+        /* margin: 30px; */
+        width: 90%;
+    }
 
+    .trailer{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    footer{
+        position: relative;
+    }
+
+      
 }
 
 
