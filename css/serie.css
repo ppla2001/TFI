@@ -1,10 +1,10 @@
-.pelicula-resumenes{
+.serie-resumenes{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 }
 
-.peli-div-grande{
+.serie-div-grande{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -13,15 +13,15 @@
     width: 65%;
 }
 
-.pelicula-img{
+.serie-img{
     margin-left: 30px;
 }
 
-.pelicula-img img{
+.serie-img img{
     border-radius: 10px ;
 }
 
-.pelicula-img button{
+.serie-img button{
     background-color: rgb(38, 40, 77);
     color: white;
     width: 250px;
@@ -32,7 +32,7 @@
     /* border: 2px solid white; */
 }
 
-.info-pelicula{
+.info-serie{
     width: 50%;
     margin-left: 30px;
 }
@@ -98,28 +98,28 @@ footer{
             display: none;
       }
 
-      .pelicula-resumenes{
+      .serie-resumenes{
           flex-direction: column;
       }
 
-      .peli-div-grande{
+      .serie-div-grande{
           display: flex;
           flex-direction: column;
           width: 100%;
           padding-right: 10px;
       }
 
-      .pelicula-img img{
+      .serie-img img{
           height: 300px;
           width: 240px;
       }
 
-      .pelicula-img button{
+      .serie-img button{
         width: 130px;
         font-size: 11px;
     }
 
-    .info-pelicula{
+    .info-serie{
         /* margin: 30px; */
         width: 90%;
     }
