@@ -72,8 +72,6 @@ nav{
 
 .separacion a{
   text-decoration: none;
-  font-weight: bold;
-  text-align: center;
   color: white;
 }
 
@@ -98,6 +96,9 @@ opacity: 0.6;
   font-size: 35px;
 }
 
+#generos {
+text-decoration: underline;
+}
 
 
 
