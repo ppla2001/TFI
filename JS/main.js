@@ -116,11 +116,26 @@ window.addEventListener('load', function(){
         console.log("Error: " + error);
     })
 
+    var GenerosBarra= document.querySelector ("#GenerosBarra")
+    
+    GenerosBarra.addEventListener("mouseOver", function(){
+
+        fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
+        .then(function(response){
+            return response.json()
+
+        })
+        .then(function(data){
+            console.log(data);
+            for (let index = 0; index < data.length; index++) {
+                const element = data[index];
+            }
+
+        })
+        
 
 
-
-
-
+    })
 
 
 
