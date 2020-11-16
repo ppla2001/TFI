@@ -16,7 +16,7 @@ nav{
     /* background-image: linear-gradient(to top, #000000 0%, #483D8B 74%); ; */
     background-image: linear-gradient(to top, #1f1d1d 0%, #000000 74%);
     min-height: 100px;    
-    margin-top: 10px;
+    
 }
 
 .logo {
@@ -51,6 +51,7 @@ nav{
 
 
 .footer {
+    margin: 0%;
     list-style: none;
     color: white;
     display: grid;
