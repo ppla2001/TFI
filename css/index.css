@@ -64,9 +64,10 @@
     position: relative;
     width: 90vw;
     height: 500px;
-    margin-top: 20px;
-    margin-left: 32px;
-    margin-bottom: 40px;
+    margin-top: 20px; 
+    margin-left: 69px;
+   /* margin-right: 20px;
+    margin-bottom: 40px; */
     overflow: hidden;
   }
   
