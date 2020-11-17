@@ -55,7 +55,8 @@ nav{
     list-style: none;
     color: white;
     display: grid;
-    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    justify-content: left;
     /* background-image: linear-gradient(to bottom, #000000 0%, #483D8B 74%);  */
     background-image: linear-gradient(to bottom, #1f1d1d 0%, #000000 74%);
     font-family: 'Oswald', sans-serif;
@@ -63,4 +64,21 @@ nav{
 
 #nombres{
     padding: 10px;
+ 
+}
+
+.logo2 {
+    letter-spacing: 4px;    
+    text-transform: uppercase;
+    font-size: 15px; 
+    font-weight: bold;
+    color: white;
+    -webkit-text-fill-color: #483D8B;
+    -webkit-text-stroke: 0.3px white;
+}
+
+.nav-names{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
