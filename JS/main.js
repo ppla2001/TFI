@@ -66,19 +66,19 @@ window.addEventListener('load', function(){
     })
       
 
-    //  var pic = document.querySelector('.pic')
-    //  fetch(`'https://api.themoviedb.org/3/movie/upcoming?api_key=070e5651f364e262a772d24963f099f2&language=en-US&page=1%27'`)
-    //  .then(respuesta =>{
-    //      return respuesta.json()
-    // })
-    //  .then(function(picUp){
-    //      console.log(picUp)
-    //      const element = picUp.results[index];
-    //      for(let i = 9 ; i < 14; i++){
-    //         picUp.innerHTML += `<a> <img src="https://image.tmdb.org/t/p/w500${element.results.backdrop_path}" alt=""> </a>`
+      var pic = document.querySelector('.pic')
+      fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1%27`)
+      .then(respuesta =>{
+          return respuesta.json()
+     })
+      .then(function(picUp){
+          console.log(picUp)
+          for(let i = 9 ; i < 14; i++){
+            const element = picUp.results[i];
+             pic.innerHTML += `<a> <img src="https://image.tmdb.org/t/p/original${element.backdrop_path}" alt=""> </a>`
 
-    //   }
-    // })
+       }
+     })
   
       
     var masVistos = document.querySelector('#masVistos')
@@ -99,7 +99,7 @@ window.addEventListener('load', function(){
                         <div class="uk-panel">
                         <a href='details.html'> <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt=""> </a>
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                                <h3 class="uk-margin-remove">${element.title}</h3>
+                                <h3 class="uk-margin-remove">${element.original_name} ${element.title}</h3>
                             </div>
                         </div>
                     </li>
@@ -116,28 +116,26 @@ window.addEventListener('load', function(){
         console.log("Error: " + error);
     })
 
-    var GenerosBarra= document.querySelector ("#GenerosBarra")
+    var generosBarra= document.querySelector ("#generos")
     
-    GenerosBarra.addEventListener("mouseOver", function(){
-
+    generosBarra.addEventListener ('mouseover',function() {
         fetch (`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
         .then(function(response){
             return response.json()
-
+    
         })
         .then(function(data){
             console.log(data);
             for (let index = 0; index < data.length; index++) {
                 const element = data[index];
+                generosBarra.innerHTML += `<ul> <li> ${element.genres.name} </li> </ul>`
             }
-
+    
         })
         
-
-
-    })
-
-
+     })
+    
+    
 
 
 
