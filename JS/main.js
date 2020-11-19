@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
                 <ul class="uk-slider-items uk-grid">
                     <li class="uk-width-3-4">
                         <div class="uk-panel">
-                        <a href='details.html'> <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt=""> </a>
+                        <a href='detailsPeli.html?id=${element.id}&title=${element.title}&img=${element.poster_path}&gnrid=${element.genre_ids}&resumen=${element.overview}'> <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt=""> </a>
                             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                                 <h3 class="uk-margin-remove">${element.title}</h3>
                             </div>
@@ -32,7 +32,7 @@ window.addEventListener('load', function(){
   
   
       .catch(function(error) {
-        console.log("Error: " + error);
+        //console.log("Error: " + error);
     })
     
     var seriesIndex = document.querySelector('#ser-ies')
@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
         return response.json()
     })
     .then(function(information) {
-        console.log(information);
+        //console.log(information);
         for (let index = 0; index < 8; index++) {
             const element = information.results[index];
             seriesIndex.innerHTML += `
@@ -66,13 +66,13 @@ window.addEventListener('load', function(){
     })
     
     
-    var pic = document.querySelector('.pic')
+    var pic = document.querySelector('.pic') //carrousel
     fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=1%27`)
     .then(respuesta =>{
         return respuesta.json()
    })
     .then(function(picUp){
-        console.log(picUp)
+        //console.log(picUp)
         for(let i = 15 ; i < 20; i++){
           const element = picUp.results[i];
            pic.innerHTML += `<a> <img src="https://image.tmdb.org/t/p/original${element.backdrop_path}" alt=""> </a>`
@@ -87,7 +87,7 @@ window.addEventListener('load', function(){
         return response.json()
       })
       .then(function(masVistosInfo) {
-          console.log(masVistosInfo);
+          //console.log(masVistosInfo);
           for (let index = 8; index < 16; index++) {
             const element = masVistosInfo.results[index];
             masVistos.innerHTML += `
@@ -113,10 +113,10 @@ window.addEventListener('load', function(){
   
   
       .catch(function(error) {
-        console.log("Error: " + error);
+        //console.log("Error: " + error);
     })
 
-    var generosBarra= document.querySelector ("#generos")
+
     
     
     

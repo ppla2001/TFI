@@ -19,6 +19,8 @@
 
 .pelicula-img img{
     border-radius: 10px ;
+    width: 316px;
+    height: 445px;
 }
 
 .pelicula-img button{

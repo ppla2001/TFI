@@ -42,8 +42,8 @@ window.addEventListener('load', function(){
 
     fetch (`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=en-US`)
     .then(function(response) {
-        return response.json()
-      })
+      return response.json()
+    })
       .then(function(infoSeries) {
         console.log(infoSeries);
         for (let index = 0; index < infoSeries.created_by.length; index++) {
