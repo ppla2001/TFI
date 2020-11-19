@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="JS/atajos.js"></script>
-    
     <script src="JS/resultadoBusqueda.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+            </div>
+                <ul type="none" class="nav-links">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="Peliculas">Peliculas</a></li> 
+                    <li><a href="Series"> Series</a></li>
+                    <li id="generos"><a href="genero.html">Géneros</a></li>
+                    <li><a href="Recomendados">Recomendados</a></li>
+                    <!-- input es el buscador -->
+                    <form action="resultadoBusqueda.html" method="GET">
+                    <li id="buscador"><input type="text" name='query' placeholder="Search..."></li>
+                    </form>
+                    <!-- cambiar lo de adentro de href cuando haga distintos htmls -->
+                </ul>
+        </nav>
+    </header>
+
     <div class="resultadosDeBusqueda">
         <ul>
            
         </ul>
     </div>
+
+    <footer>
+        <!-- <ul class="footer">
+            <li id="nombres"> Pedro Pla, Melanie De Giusti, Lara Kreimer</li>
+            <li id="nombres"> Melanie De Giusti</li>
+            <li id="nombres"> Lara Kreimer</li>
+         
+        </ul> -->
+        <nav>
+            <div class="logo2">
+                <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+            </div>
+                <ul type="none" class="nav-names">
+                    <li> Pedro Pla</li>
+                    <li> Melanie De Giusti</li> 
+                    <li> Lara Kreimer</li>
+                    
+                </ul>
+        </nav>
+    </footer>
 </body>
 </html>
