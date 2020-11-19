@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- CSS estilo general  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- CSS estilo de Apollo11 -->
-    <link rel="stylesheet" href="css/peliculas.css">
     <!-- Tipo de letra -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <!-- Logo arriba en la tab -->
     <link rel="shortcut icon" type="image/png" href="imagenes/LogoMakr_9Jhpyt.png">
+    <!-- JS -->
+    <script src="JS/atajos.js"></script>
+    <script src="JS/detailSerie.js"></script>
+    <!-- CSS estilo general  -->
+    <link rel="stylesheet" href="css/style.css">
+     <!-- CSS estilo -->
+     <link rel="stylesheet" href="css/serie.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -33,38 +35,38 @@
         </nav>
     </header>
 
-    <section class="pelicula-resumenes">
-        
-        <div class="peli-div-grande">
-            <div class="pelicula-img">
-                <img src="imagenes/apollo11.jpg" alt="Apollo11">
-                <br>
-                <button>Agregar a mi lista...</button>
+    <section class="serie-resumenes">
+
+        <div class="serie-div-grande">
+            
+            <div class="serie-img">
+               
             </div>
         
-            <div class="info-pelicula">
+            <div class="info-serie">
                 <h2 id="titulo">
-                    Apollo 11
+                    
                 </h2>
             
                 <p id="resumen">
-                    El baúl de la NASA se abre para proporcionar material inédito sobre la misión “Apollo 11”, que llevaría por primera vez al hombre a la Luna. Las cámaras ubicadas en Cabo Cañaveral capturan los momentos más importantes del despegue de la nave. Unidas a las escenas filmadas en el interior del cohete espacial, ambas perspectivas ofrecen una visión íntima sobre las sensaciones que experimentaron los astronautas durante su misión.  
+                    
                 </p>
 
                 <div id="actores">
-                    <p>Director: Todd Douglass Miller</p> 
-                    <p>Actores: Buzz Aldrin, Michael Collins, Neil Armstrong, Walter Cronkite </p>
-                    <p>Género: Documentales Historia </p>
+                    <p>Director: <span id="director"> </span></p> 
+                    <p>Actores: <span id="actoresS"> </span></p>
+                    <p>Género: <span id = "genero"> </span> </p>
                 </div>
-            </div> 
+            </div>
         </div>
 
-        <iframe class="trailer" width="560" height="315"
-         src="https://www.youtube.com/embed/3Co8Z8BQgWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-         
-
+        <div class="trailer"></div>
+        <!-- <iframe class="trailer"width="560" height="315" 
+        src="https://www.youtube.com/embed/JGBIimq1I3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe> -->
+        
     </section>
+
 
     <footer>
         <ul class="footer">

@@ -21,6 +21,7 @@
     <script src="JS/atajos.js"></script>
     <!-- JS principal -->
     <script src="JS/main.js"></script>
+    <script src="JS/resultadoBusqueda.js"></script>
     
 </head>
 
@@ -37,7 +38,9 @@
                     <li id="generos"><a href="genero.html">Géneros</a></li>
                     <li><a href="Recomendados">Recomendados</a></li>
                     <!-- input es el buscador -->
-                    <li id="buscador"><input type="text" placeholder="Search..."></li>
+                    <form action="resultadoBusqueda.html" method="GET">
+                    <li id="buscador"><input type="text" name='query' placeholder="Search..."></li>
+                    </form>
                     <!-- cambiar lo de adentro de href cuando haga distintos htmls -->
                 </ul>
         </nav>
@@ -45,11 +48,7 @@
 
     <!-- cambiar las fotos por todas mismo tamaño -->
     <div class="pic">
-         <!-- <a href=""><img src="imagenes/parasitebanner.jpg" alt="" class="pic"> </a>
-        <a href=""><img src="imagenes/Irishmenbanner.jpg" alt="" class="pic"> </a>
-        <a href=""><img src="imagenes/jokerbanner.jpg" alt="" class="pic"> </a>
-        <a href=""><img src="imagenes/1917-feature-1.jpg" alt="" class="pic"> </a>
-        <a href=""><img src="imagenes/the-lighthouse-2019-banner.jpg" alt="" class="pic"> </a>   -->
+        
     </div>
 
     <section>
@@ -59,29 +58,7 @@
 
         <div id='peli-culas' class="separacion"> 
            
-            <!-- <a href="apollo-11.html">
-                <img src="imagenes/apollo11.jpg" alt="apollo11" >
-                <br>
-                <h3> Apollo 11</h3>   
-            </a>  
-
-             <a href="">
-                <img src="imagenes/juegos.jpg" alt="Juegos del hambre">
-                <br>
-                <h3> Los juegos del hambre </h3>
-            </a>
-
-            <a href="">
-                <img src="imagenes/avatar.jpg" alt="avatar">
-                <br>
-                <h3> Avatar </h3>
-            </a>
-
-            <a href="">
-                <img src="imagenes/geminis.jpg" alt="geminis">
-                <br>
-                <h3> Géminis </h3>
-            </a> -->
+           
 
         </div>
     </section>
@@ -93,29 +70,7 @@
 
         <div id='ser-ies' class="separacion"> 
            
-            <!-- <a href="blacklist.html">
-              <img src="imagenes/black list.jpeg" alt="black list" >
-              <br>
-              <h3> Black List </h3>
-            </a>
-
-           <a href="">
-              <img src="imagenes/riverdale.jpeg" alt="riverdale">
-              <br>
-              <h3> Riverdale </h3>
-          </a>
-
-          <a href="">
-              <img src="imagenes/stranger thing.jpeg" alt="stranger things">
-              <br>
-              <h3> Stranger Things </h3>
-          </a >
-
-          <a href="">
-              <img src="imagenes/the crown.jpeg" alt="the crown">
-              <br>
-              <h3> The Crown </h3>
-          </a > -->
+            
 
           </div>
 
@@ -123,34 +78,12 @@
 
     <section>
         <h2 id="seccion">
-            10 mas vistos
+            Trending
         </h2>
 
         <div class="separacion" id="masVistos"> 
            
-            <!-- <a href="">
-              <img src="imagenes/venganza.jpeg" alt="venganza" >
-              <br>
-              <h3> La venganza de Analia </h3>
-           </a >
-
-           <a href="">
-              <img src="imagenes/lucifer.jpeg" alt="lucifer">
-              <br>
-              <h3> Lucifer </h3>
-          </a >
-
-          <a href="">
-              <img src="imagenes/jurassic.jpeg" alt="jurassic world">
-              <br>
-              <h3> Jurassic World </h3>
-          </a >
-
-          <a href="">
-              <img src="imagenes/practicante.jpeg" alt="el practicante">
-              <br>
-              <h3> El practicante </h3>
-          </a> -->
+            
 
           </div>
     </section>
