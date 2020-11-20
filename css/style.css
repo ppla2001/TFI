@@ -81,4 +81,5 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 40%;
+    -webkit-text-fill-color: lightgrey;
 }
