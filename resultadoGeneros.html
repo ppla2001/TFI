@@ -20,7 +20,7 @@
     <!-- Atajos JS -->
     <script src="JS/atajos.js"></script>
     <!-- JS principal -->
-    <script src="JS/main.js"></script>
+    <script src="JS/resultadoGeneros.js"></script>
     
 </head>
 
@@ -28,74 +28,28 @@
     <header>
         <nav>
             <div class="logo">
-                <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+                <a href="index.html"><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
             </div>
                 <ul type="none" class="nav-links">
                     <li><a href="index.html"> Home </a></li>
                     <li><a href="Peliculas">Peliculas</a></li> 
                     <li><a href="Series"> Series</a></li>
-                    <li id="generos"><a href="generos.html">Géneros</a></li>
+                    <li><a href="generos.html">Géneros</a></li>
                     <li><a href="Recomendados">Recomendados</a></li>
                     <!-- input es el buscador -->
-                    <form action="resultadoBusqueda.html" method="GET">
-                    <li id="buscador"><input type="text" name='query' placeholder="Search..."></li>
-                    </form>
+                    <li id="buscador"><input type="text" placeholder="Search..."></li>
                     <!-- cambiar lo de adentro de href cuando haga distintos htmls -->
                 </ul>
         </nav>
     </header>
 
-    <!-- cambiar las fotos por todas mismo tamaño -->
-    <div class="pic">
-        
-    </div>
+   <div id="resultados" class="separacion">
 
-    <section>
-        <h2 id="seccion">
-            Peliculas
-        </h2>
-
-        <div id='peli-culas' class="separacion"> 
-           
-           
-
-        </div>
-    </section>
-
-    <section>
-        <h2 id="seccion">
-            Series
-        </h2>
-
-        <div id='ser-ies' class="separacion"> 
-           
-            
-
-          </div>
-
-    </section>
-
-    <section>
-        <h2 id="seccion">
-            Trending
-        </h2>
-
-        <div class="separacion" id="masVistos"> 
-           
-            
-
-          </div>
-    </section>
+   </div>
 
     
 
 <footer>
-    <!-- <ul class="footer">
-        <li id="nombres"> Pedro Pla, Melanie De Giusti, Lara Kreimer</li>
-        <li id="nombres"> Melanie De Giusti</li>
-        <li id="nombres"> Lara Kreimer</li>
-     
-    </ul> -->
     <nav>
         <div class="logo2">
             <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
