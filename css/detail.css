@@ -34,6 +34,12 @@
     /* border: 2px solid white; */
 }
 
+#calificacion{
+    color: darkgoldenrod;
+    font-size: 20px;
+    margin-bottom: 20px ;
+}
+
 .info{
     width: 50%;
     margin-left: 30px;
@@ -53,8 +59,39 @@ iframe{
     margin-top: 70px;
 }
 
+.containerReview{
+    margin: 50px;
+    
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.resenias{
+    display: flex;
+    gap: 15px;
+}
+.tituloReview{
+    color: rgb(153, 157, 160);
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px; 
+}
+.review img{
+    width: 64px;
+    height: 64px;
+}
+.review h3{
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.review span{
+    font-size: 12px;
+}
 footer{
-    position: fixed;
+        
     left: 0;
     bottom: 0;
     width: 100%;

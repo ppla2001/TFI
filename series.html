@@ -3,27 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Document</title>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
-    <!-- CSS para estilo general -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- CSS para estilo de la home -->
-    <link rel="stylesheet" href="css/index.css">
     <!-- Meti para usar otro tipo de letra que no encontre en visual -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <!-- logo arriba en la tab de chrome -->
-    <link rel="shortcut icon" type="image/png" href="imagenes/LogoMakr_9Jhpyt.png">
-    <!-- Atajos JS -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="JS/atajos.js"></script>
-    <!-- JS principal -->
-    <script src="JS/main.js"></script>
-    
+    <script src="JS/series.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
@@ -45,73 +36,35 @@
         </nav>
     </header>
 
-    <!-- cambiar las fotos por todas mismo tamaño -->
-    <div class="pic">
-        
-    </div>
-
-    <section>
-        <h2 id="seccion">
-            Peliculas
-        </h2>
-
-        <div id='peli-culas' class="separacion"> 
-           
-           
-
-        </div>
-    </section>
-
-    <section>
-        <h2 id="seccion">
-            Series
-        </h2>
-
-        <div id='ser-ies' class="separacion"> 
-           
-            
-
-          </div>
-
-    </section>
-
-    <section>
-        <h2 id="seccion">
-            Trending
-        </h2>
-
-        <div class="separacion" id="masVistos"> 
-           
-            
-
-          </div>
-    </section>
-
-    
-
-<footer>
-    <!-- <ul class="footer">
-        <li id="nombres"> Pedro Pla, Melanie De Giusti, Lara Kreimer</li>
-        <li id="nombres"> Melanie De Giusti</li>
-        <li id="nombres"> Lara Kreimer</li>
-     
-    </ul> -->
-    <nav>
-        <div class="logo2">
-            <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
-        </div>
-            <ul type="none" class="nav-names">
-                <li> Pedro Pla</li>
-                <li> Melanie De Giusti</li> 
-                <li> Lara Kreimer</li>
+    <section id="todaInfo">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true ; autoplay: true ; autoplay-interval: 3000" >
+            <ul id="series" class="uk-slider-items uk-grid">
                 
             </ul>
-    </nav>
-</footer>
-    
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
+        </div>
+    </section>
 
-
-
+    <footer>
+        <!-- <ul class="footer">
+            <li id="nombres"> Pedro Pla, Melanie De Giusti, Lara Kreimer</li>
+            <li id="nombres"> Melanie De Giusti</li>
+            <li id="nombres"> Lara Kreimer</li>
+         
+        </ul> -->
+        <nav>
+            <div class="logo2">
+                <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+            </div>
+                <ul type="none" class="nav-names">
+                    <li> Pedro Pla</li>
+                    <li> Melanie De Giusti</li> 
+                    <li> Lara Kreimer</li>
+                    
+                </ul>
+        </nav>
+    </footer>
 </body>
 </html>

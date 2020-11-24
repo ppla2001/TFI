@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Meti para usar otro tipo de letra que no encontre en visual -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="JS/atajos.js"></script>
-    <script src="JS/resultadoBusqueda.js"></script>
+    <script src="JS/miLista.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +20,7 @@
                     <li><a href="index.html"> Home </a></li>
                     <li><a href="peliculas.html">Peliculas</a></li> 
                     <li><a href="series.html"> Series</a></li>
-                    <li id="generos"><a href="genero.html">Géneros</a></li>
+                    <li id="generos"><a href="generos.html">Géneros</a></li>
                     <li><a href="miLista.html">Mi Lista</a></li>
                     <!-- input es el buscador -->
                     <form action="resultadoBusqueda.html" method="GET">
@@ -37,9 +31,13 @@
         </nav>
     </header>
 
-    <div class="resultadosDeBusqueda separacion">
-       
-    </div>
+    <section>
+        <ul class="listado">
+
+        </ul>
+    </section>
+
+
 
     <footer>
         <!-- <ul class="footer">
@@ -50,7 +48,7 @@
         </ul> -->
         <nav>
             <div class="logo2">
-                <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+                <a href="index.html "><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
             </div>
                 <ul type="none" class="nav-names">
                     <li> Pedro Pla</li>

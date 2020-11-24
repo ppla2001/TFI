@@ -39,7 +39,7 @@ window.addEventListener('load', function(){
         }
       })
 
-      fetch (`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_genres=${id}`)  //Peliculas 
+      fetch (`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_genres=${id}`)  //Series
       .then(function(response) {
         return response.json()
       })
