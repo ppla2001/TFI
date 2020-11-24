@@ -44,7 +44,7 @@ window.addEventListener('load', function(){
           actores.innerHTML += ` ${element.original_name}, `
         }
         else{
-          actores.innerHTML += `No se encontraron`
+          actores.innerHTML += `No se encontraron actores`
         }
       }
     })
