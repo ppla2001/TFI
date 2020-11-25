@@ -26,9 +26,9 @@ window.addEventListener('load', function(){
       imgImg.innerHTML = `
     <img src="https://image.tmdb.org/t/p/w500${img}">
       <br> 
-    <form action="miLista.html" method="get">
-      <button id='info'>Agregar a mi lista...</button> 
-    </form>`;
+      <form action="miLista.html" method="get">
+      <button class='info'>Agregar a mi lista...</button> 
+      </form>`;
     calificacion.innerHTML = `${voteAverage}`
     titulo.innerHTML = `${title}`
     resumen.innerHTML = `${resumenes}`
@@ -107,8 +107,8 @@ window.addEventListener('load', function(){
   <img src="https://image.tmdb.org/t/p/w500${img}">
   <br>
   <form action="miLista.html" method="get">
-  <button id='info'>Agregar a mi lista...</button>
-  </form>` 
+  <button class='info'>Agregar a mi lista...</button>
+    </form>` 
   calificacion.innerHTML = `${voteAverage}`
   titulo.innerHTML = `${title}`
   resumen.innerHTML = `${resumenes}`
@@ -179,15 +179,46 @@ window.addEventListener('load', function(){
 
   // A partir de aca esta la parte de agregar a mi lista 
   
-  var info = document.querySelector('#info')
-  info.addEventListener('click', function(){
-  localStorage.setItem('favoritos', id)
-  // var infoArray = JSON.parse(window.localStorage.getItem('favoritos'))
-  })
+  var info = document.querySelector('.info')
+  var arrayInfo;
 
-    
-    
-    
-    
-    
+  info.forEach(element => {
+    element.addEventListener('click', function(e){
+    var miLista = localStorage.getItem('miLista')
+    if(miLista == null){
+      arrayInfo = []
+    }
+    else{
+      arrayInfo = JSON.parse(miLista)
+    }
+    arrayInfo.push(JSON.parse(this.id))
+    localStorage.setItem('miLista', JSON.stringify(arrayInfo))
+    })
+  });
+  
+  
+  
+  
+  
 }) //NO BORRAR
+// favoritosArray = JSON.parse(window.localStorage.getItem('favoritos'))
+// favoritosArrayMando = favoritosArray.push(favoritosArray)
+
+// var info = document.querySelector('.info')
+// var infoLS = localStorage.setItem('favoritos', id)
+// if(infoLS == null){
+//   favoritos = []
+// }
+// else{
+//   favoritos = JSON.stringify(infoLS)
+// }
+
+// info.addEventListener('click', function(){
+//   if(infoLS == null){
+//   infoLS.push(id);
+//   }
+//   else{
+//     alert('Ya se encuentra en Mi Lista...')
+//   }
+  
+// })
