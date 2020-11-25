@@ -179,11 +179,11 @@ window.addEventListener('load', function(){
 
   // A partir de aca esta la parte de agregar a mi lista 
   
-  // var info = document.querySelector('#info')
-  // info.addEventListener('click', function(){
-  // localStorage.setItem('favoritos', id)
+  var info = document.querySelector('#info')
+  info.addEventListener('click', function(){
+  localStorage.setItem('favoritos', id)
   // var infoArray = JSON.parse(window.localStorage.getItem('favoritos'))
-  // })
+  })
 
     
     
