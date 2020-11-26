@@ -1,21 +1,16 @@
 window.addEventListener('load', function(){
     
-    var favoritos = JSON.parse(localStorage.getItem('miLista'))
-    var listado = document.querySelector('.listado')
+     var favoritos = JSON.parse(localStorage.getItem('miLista'))
+     var listado = document.querySelector('.listado')
 
-    for (let index = 0; index < favoritos.length; index++) {
-        const element = array[index];
-        listado.innerHTML += `
-        <li> 
-        <img src= 'https://image.tmdb.org/t/p/3500${favoritos[index].poster_path}'>
+     for (let index = 0; index < favoritos.length; index++) {
+         const element = array[index];
+         listado.innerHTML += `
+         <li> 
+         <img src= 'https://image.tmdb.org/t/p/3500${favoritos[index].poster_path}'>
         </li>
-        `
+        
     }
-    
-    
-    
-    
-    
     
     
     
