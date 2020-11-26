@@ -26,9 +26,9 @@ window.addEventListener('load', function(){
       imgImg.innerHTML = `
     <img src="https://image.tmdb.org/t/p/w500${img}">
       <br> 
-      <form action="miLista.html" method="get">
-      <button class='info'>Agregar a mi lista...</button> 
-      </form>`;
+      
+      <button type='submit' name='button' class='botonFavs'>Agregar a mi lista...</button> 
+      `;
     calificacion.innerHTML = `${voteAverage}`
     titulo.innerHTML = `${title}`
     resumen.innerHTML = `${resumenes}`
@@ -99,6 +99,38 @@ window.addEventListener('load', function(){
       </div>`
     })
   })
+  //Mi Lista
+  var recuperoStorageTv = localStorage.getItem("favoritosTv")
+
+  if (recuperoStorageTv == null ){
+      favoritosTv=[];
+  }
+  else {
+      favoritosTv=JSON.parse(recuperoStorageTv);
+  }
+
+  var boton = document.querySelector(".botonFavs")
+
+  if(favoritosTv.includes(id)){
+      boton.innerHTML="Quitar de Mi Lista"
+  }
+
+  boton.addEventListener('click' , function(){
+
+      if(favoritosTv.includes(id)==true){
+          var index = favoritosTv.indexOf(id)
+          favoritosTv.splice(index, 1)
+          boton.innerHTML="Agregar a Mi Lista"
+      }
+      else{
+          favoritosTv.push(id)
+          boton.innerHTML ="Quitar de Mi Lista"
+      }
+
+      let infoParaStorageTv = JSON.stringify(favoritosTv)
+      localStorage.setItem("favoritosTv", infoParaStorageTv)
+      console.log(localStorage); 
+    })
   } //NO BORRAR, IF
 
 
@@ -106,9 +138,8 @@ window.addEventListener('load', function(){
     imgImg.innerHTML = ` 
   <img src="https://image.tmdb.org/t/p/w500${img}">
   <br>
-  <form action="miLista.html" method="get">
-  <button class='info'>Agregar a mi lista...</button>
-    </form>` 
+  <button type='submit' name='button' class='botonFavs'> Agregar a Mi Lista... </button>
+  ` 
   calificacion.innerHTML = `${voteAverage}`
   titulo.innerHTML = `${title}`
   resumen.innerHTML = `${resumenes}`
@@ -175,27 +206,44 @@ window.addEventListener('load', function(){
       </div>`
     })
   })
+
+  //Mi Lista
+  var recuperoStorageMovie = localStorage.getItem("favoritosMovie")
+
+  if (recuperoStorageMovie == null ){
+      favoritosMovie=[];
+  }
+  else {
+      favoritosMovie=JSON.parse(recuperoStorageMovie);
+  }
+
+  var boton = document.querySelector(".botonFavs")
+
+  if(favoritosMovie.includes(id)){
+      boton.innerHTML="Quitar de Mi Lista"
+  }
+
+  boton.addEventListener('click' , function(){
+
+      if(favoritosMovie.includes(id)==true){
+          var index = favoritosMovie.indexOf(id)
+          favoritosMovie.splice(index, 1)
+          boton.innerHTML="Agregar a Mi Lista"
+      }
+      else{
+          favoritosMovie.push(id)
+          boton.innerHTML ="Quitar de Mi Lista"
+      }
+
+      let infoParaStorageMovie = JSON.stringify(favoritosMovie)
+      localStorage.setItem("favoritosMovie", infoParaStorageMovie)
+      console.log(localStorage); 
+    })
   } // NO BORRAR, IF
 
   
-  // A partir de aca esta la parte de agregar a mi lista 
   
-  var info = document.querySelector('.info')
-  var arrayInfo;
-
-  info.forEach(element => {
-    element.addEventListener('click', function(e){
-    var miLista = localStorage.getItem('miLista')
-    if(miLista == null){
-      arrayInfo = []
-    }
-    else{
-      arrayInfo = JSON.parse(miLista)
-    }
-    arrayInfo.push(JSON.parse(this.id))
-    localStorage.setItem('miLista', JSON.stringify(arrayInfo))
-    })
-  });
+  
   
   
   

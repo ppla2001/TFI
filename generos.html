@@ -34,10 +34,12 @@
                     <li><a href="index.html"> Home </a></li>
                     <li><a href="peliculas.html">Peliculas</a></li> 
                     <li><a href="series.html"> Series</a></li>
-                    <li><a href="generos.html">Géneros</a></li>
+                    <li id="generos"><a href="generos.html">Géneros</a></li>
                     <li><a href="miLista.html">Mi Lista</a></li>
                     <!-- input es el buscador -->
-                    <li id="buscador"><input type="text" placeholder="Search..."></li>
+                    <form action="resultadoBusqueda.html" method="GET">
+                    <li id="buscador"><input type="text" name='query' placeholder="Search..."></li>
+                    </form>
                     <!-- cambiar lo de adentro de href cuando haga distintos htmls -->
                 </ul>
         </nav>
@@ -60,7 +62,7 @@
     </ul> -->
     <nav>
         <div class="logo2">
-            <a href=""><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
+            <a href="index.html"><img src="imagenes/logo-5.png" alt="logo" width="30%" height="30%">  </a>
         </div>
             <ul type="none" class="nav-names">
                 <li> Pedro Pla</li>
