@@ -163,13 +163,19 @@ footer{
     }
 
     .trailer{
-        width: 90%;
-        margin-left: 20px;
+        width: 10px;
+       
+        /* margin-left: 20px; */
     }
 
     footer{
         position: relative;
     }
+
+    .nav-names{
+        font-size: 80%;
+        margin: 8%;
+      }
 
       
 }

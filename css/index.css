@@ -158,5 +158,10 @@
   .separacion h3{
     font-size: 15px;
   }
+
+  .nav-names{
+    font-size: 80%;
+    margin: 8%;
+  }
 } 
 
