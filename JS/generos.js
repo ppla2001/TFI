@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-    var contenedor = document.querySelector('.separacion')
+    var contenedorPeli = document.querySelector('#peli-culas')
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
     .then(function(response) {
         return response.json()
@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
           console.log(information);
           for (let index = 0; index < information.genres.length; index++) {
             const element = information.genres[index];
-            contenedor.innerHTML += `
+            contenedorPeli.innerHTML += `
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
             <ul class="uk-slider-items uk-grid">
@@ -29,7 +29,7 @@ window.addEventListener('load', function(){
           }
       })
 
-      //var contenedor2 = document.querySelector('.separacion2')
+      var contenedorSerie = document.querySelector('#ser-ies')
       fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=en-US`)
     .then(function(response) {
         return response.json()
@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
           console.log(information);
           for (let index = 0; index < information.genres.length; index++) {
             const element = information.genres[index];
-            contenedor.innerHTML += `
+            contenedorSerie.innerHTML += `
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
 
             <ul class="uk-slider-items uk-grid">
