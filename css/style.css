@@ -92,4 +92,6 @@ nav{
     align-items: center;
     -webkit-text-fill-color: lightgrey;
     font-size: 100%;
+    gap: 4%;
 }
+
