@@ -65,7 +65,7 @@ window.addEventListener('load', function(){
           director.innerHTML += `${element.name}`
       }
       infoSeries.genres.forEach(element => {
-          genero.innerHTML += `  ${element.name} , `
+        genero.innerHTML += ` <a href='resultadoGeneros.html?id=${element.id}'> ${element.name} , </a> `
       });
         
     })
@@ -177,7 +177,7 @@ window.addEventListener('load', function(){
   .then (function(infoPelis){
       //console.log(infoPelis);
       infoPelis.genres.forEach(element => {
-          genero.innerHTML += ` ${element.name}, `
+          genero.innerHTML += ` <a href='resultadoGeneros.html?id=${element.id}'> ${element.name}, </a>`
       });
       
   })
