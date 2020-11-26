@@ -8,13 +8,9 @@ window.addEventListener('load', function(){
          listado.innerHTML += `
          <li> 
          <img src= 'https://image.tmdb.org/t/p/3500${favoritos[index].poster_path}'>
-        </li>
-        
+         </li>
+         `
     }
-    
-    
-    
- 
     
     
     

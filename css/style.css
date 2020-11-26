@@ -80,6 +80,16 @@ nav{
 .nav-names{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    margin-right: 20%;
     width: 40%;
     -webkit-text-fill-color: lightgrey;
+}
+
+#ig{
+    display: flex;
+    align-items: center;
+    -webkit-text-fill-color: lightgrey;
+    font-size: 100%;
 }

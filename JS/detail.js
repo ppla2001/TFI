@@ -177,6 +177,7 @@ window.addEventListener('load', function(){
   })
   } // NO BORRAR, IF
 
+  
   // A partir de aca esta la parte de agregar a mi lista 
   
   var info = document.querySelector('.info')
