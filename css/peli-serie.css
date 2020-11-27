@@ -69,8 +69,10 @@
       font-size: 80%;
       margin: 8%;
     }
+    
     #tmdb{
       display: grid;
       grid-template-rows: auto;
       gap: 20px;
-    }
+    } 
+

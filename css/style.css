@@ -32,14 +32,15 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 20%;
+    gap: 5%;
 }
 
 .nav-links a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-links input{
