@@ -112,83 +112,105 @@ footer{
   
     }
 
-     nav{ 
+    nav{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+    
+    }
+
+    .logo a{
+    padding-left: 35%;
+    padding-right: 35%;
+    
+    }
+
+    .nav-links{
+    padding: 0%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+    .nav-links a{
+    font-size: 15px;
+    padding: 10px;
+    }
+    
+    .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    }
+
+    #buscador{
+        display: block;
+    }
+
+    .resumenes{
+        flex-direction: column;
+    }
+
+    .div-grande{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0%;
-        
-      }
+        padding-right: 10px;
+    }
+
+    .img_img img{
+        height: 300px;
+        width: 240px;
+    }
+
+    .img_img button{
+    width: 130px;
+    font-size: 11px;
+}
+
+.info{
+    /* margin: 30px; */
+    width: 90%;
+}
+
+
+
+iframe{
+    margin: 20px;
+    width: 90%;
+}
+
+
+
+.nav-names{
+    font-size: 80%;
+    margin: 8%;
+    }
+
+footer{
+    padding: 0%;
+    margin: 0%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
     
-      .logo a{
-        padding-left: 35%;
-        padding-right: 35%;
-      
-      }
-      
-      .nav-links a{
-        font-size: 15px;
-        padding: 10px;
-      }
-      
-      .nav-links ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-      }
-    
-      #buscador{
-            display: none;
-      }
-
-      .resumenes{
-          flex-direction: column;
-      }
-
-      .div-grande{
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          padding-right: 10px;
-      }
-
-      .img_img img{
-          height: 300px;
-          width: 240px;
-      }
-
-      .img_img button{
-        width: 130px;
-        font-size: 11px;
+    #ig{
+    margin-top: 10px;
     }
 
-    .info{
-        /* margin: 30px; */
-        width: 90%;
+    .logo2{
+    display: flex;
+    align-items: center;
     }
 
     
-
-    iframe{
-        margin: 20px;
-        width: 90%;
-    }
-
-    footer{
-        position: relative;
-    }
-
-    .nav-names{
-        font-size: 80%;
-        margin: 8%;
-      }
-
-      #tmdb{
-          display: grid;
-          grid-template-rows: auto;
-          gap: 20px;
-      }
-      
 }
 
 
